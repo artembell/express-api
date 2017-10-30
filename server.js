@@ -26,6 +26,16 @@ app.use(bodyParser.json());
 app.use('/artist', artist);
 
 
+app.get('/users', function(req, res){
+	res.json([{
+		id: 1,
+		username: "samsepi0l"
+	}, {
+		id: 2,
+		username: "D0loresH4ze"
+	}]);
+});
+
 db.connect('mongodb://localhost:27017/artists', function(err){
 	if(err){
 		return console.log(err);
