@@ -1,0 +1,17 @@
+section{
+	height: 10%;
+	font-size: 60px;
+	padding: 50px;
+}
+
+section span{
+	vertical-align: center;
+}
+
+.contact-info{
+	float:right;
+}
+
+#header-background{
+	background-image: url('../images/wall-2.png');
+}
