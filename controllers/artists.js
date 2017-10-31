@@ -9,7 +9,7 @@ exports.all = function(req, res){
 			console.log(err);
 			return sendStatus(500);
 		}
-		res.send(docs);
+		res.json(docs);//в docs к нам приходит массив
 	});
 }
 

@@ -10,7 +10,9 @@ export default class Header extends React.Component{
 		this.state = {
 			list: [
 				"Home",
-				"Contact"
+				"Contact",
+				"Users",
+				"Artists"
 			],
 
 			languages: [
@@ -32,7 +34,7 @@ export default class Header extends React.Component{
 				<section id='header-background'>
 					<div>
 						<span>Board Games E-Shop</span>
-						<span class="contact-info">Phone</span>
+						<span className="contact-info">Phone</span>
 					</div>
 				</section>
 				

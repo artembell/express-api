@@ -29,10 +29,10 @@ app.use('/artist', artist);
 app.get('/users', function(req, res){
 	res.json([{
 		id: 1,
-		username: "samsepi0l"
+		username: "Linkin Park"
 	}, {
 		id: 2,
-		username: "D0loresH4ze"
+		username: "Nothing But Thieves"
 	}]);
 });
 
