@@ -18,12 +18,16 @@ colors.setTheme({
 
 var db = require('./db');
 
-var artist = require('./routes/artist');
+//var artist = require('./routes/artist');
+var games = require('./routes/boardgames');
+var categories = require('./routes/categories'); 
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use('/artist', artist);
+//app.use('/artist', artist);
+app.use('/games', games);
+app.use('/categories', categories);
 
 
 app.get('/users', function(req, res){
@@ -36,7 +40,7 @@ app.get('/users', function(req, res){
 	}]);
 });
 
-db.connect('mongodb://localhost:27017/artists', function(err){
+db.connect('mongodb://localhost:27017/boardgames', function(err){
 	if(err){
 		return console.log(err);
 	}

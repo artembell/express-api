@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import './header.css';
 
 export default class Users extends React.Component{
@@ -11,13 +10,13 @@ export default class Users extends React.Component{
 		};
 	}
 
-	state = {users: []}
+	//state = {users: []}
 
 	componentDidMount() {
 		fetch('/users')
 		  .then(res => res.json())
 		  .then(users => this.setState(
-		  	{users}
+		  	{users: users}
 		  ));
 	}
 

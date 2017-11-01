@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { StickyContainer, Sticky } from 'react-sticky';
 
 export default class Artists extends React.Component{
 	constructor(props) {
@@ -20,7 +20,9 @@ export default class Artists extends React.Component{
 	render(){
 		console.log(this.state.artists);
 		return (
-			<h1>Hello</h1>
+			<div>
+				<h1 className="sticky">Artists</h1>
+			</div>
 		);
 	}
 }

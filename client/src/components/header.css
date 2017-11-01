@@ -1,17 +1,33 @@
-section{
-	height: 10%;
-	font-size: 60px;
-	padding: 50px;
+#header section{
+	font-size: 80px;
+	padding: 25px;
 }
 
-section span{
-	vertical-align: center;
+.article{
+	line-height: 2.2em;
 }
 
 .contact-info{
-	float:right;
+	display: flex;
+	font-size: 20px;
+	width: 20%;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 #header-background{
-	background-image: url('../images/wall-2.png');
+	background-color: #2ECC71;
 }
+
+img{
+	width: 150px;
+	height: 150px;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+

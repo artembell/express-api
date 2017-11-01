@@ -13,7 +13,8 @@ export default class Footer extends React.Component{
 		return (
 			<div className="footer">
 				<hr/>
-				<h3>copyright information</h3>
+				<h3>2017-{new Date().getFullYear()}</h3>
+				<h4>&copy;All rights reserved and all games are stolen</h4>
 			</div>
 			
 		);
